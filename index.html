@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel MBalu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Hotel MBalu</h1>
+</header>
+
+<section class="hero">
+  <h2>Reserve o seu quarto</h2>
+  <p>Conforto e luxo ao melhor preço</p>
+</section>
+
+<section class="booking">
+  <h2>Fazer Reserva</h2>
+
+  <form id="formReserva">
+    <input type="text" id="nome" placeholder="Seu nome" required>
+
+    <select id="quarto">
+      <option value="20000">Quarto Standard - 20.000 Kz</option>
+      <option value="35000">Quarto Deluxe - 35.000 Kz</option>
+      <option value="50000">Suíte - 50.000 Kz</option>
+    </select>
+
+    <label>Check-in:</label>
+    <input type="date" id="checkin" required>
+
+    <label>Check-out:</label>
+    <input type="date" id="checkout" required>
+
+    <button type="submit">Reservar</button>
+  </form>
+
+  <h3 id="resultado"></h3>
+</section>
+
+<section class="lista">
+  <h2>Reservas</h2>
+  <ul id="listaReservas"></ul>
+</section>
+
+<script src="js/script.js"></script>
+
+<a href="#" id="whatsappBtn" class="whatsapp">Falar no WhatsApp</a>
+</body>
+</html>
